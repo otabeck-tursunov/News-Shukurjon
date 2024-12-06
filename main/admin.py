@@ -55,7 +55,7 @@ class NewsletterAdmin(admin.ModelAdmin):
 class ContactAdmin(admin.ModelAdmin):
     list_display = ('name', 'email', 'subject', 'created_at')
     list_filter = ('name', 'email', 'subject')
-    search_fields = ('name', 'email', 'subject')
+    search_fields = ('name', 'email', 'subject', 'created_at')
     date_hierarchy = 'created_at'
 
 
